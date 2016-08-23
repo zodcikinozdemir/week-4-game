@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>CrystalsCollector Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	 
+  <!-- Added link to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+
+<body>
+
+   <div class="container">
+    <div class="row">
+     <div class="col-sm-10">
+      <div class = "panel panel-default">
+        <div class="page-header">
+          <h1>  CrystalsCollector Game</h1>
+        </div>
+      </div>
+     </div>
+    </div>
+    <div class="row">
+     <div class="col-sm-4">
+      <div class = "panel panel-default">
+      <div class = "panel-body txt">
+          <p>You will be given a random number at the start of the game.</p>
+          <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+          <p>You win the game by matching your total score to the ranndom number. You lose the game if your total score goes above the random number</p>
+          <p>The value of each crystak in hidden from you untik you click on it.</p>
+          <p>Each time when the game starts, the game will change the values of each crystal</p>
+        </div> 
+        </div>
+     </div>
+      <div class="col-sm-6">
+        <div class = "panel panel-default">
+          <div class="table-responsive">
+          <table class="table table-bordered">
+          <thead>
+          <tr><th class="text-center">
+              <h4 id="msg">Let's Start!</h4>
+          </th></tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="text-center vert-align"> 
+              <h3 id = "randomNumber">129</h3>
+            </td>
+            <td>
+              <h4 id="wins">Wins : 0</h4>
+              <h4 id="losses">Losses : 0</h4>
+            </td>
+          </tr>
+          </tbody>
+          </table>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+              <button class="btn btn-default gem" value=0>
+                <img src="assets/images/garnet.png" 
+                     width = "50"/>
+              </button>
+              <button class="btn btn-default gem" value=1>
+                <img src="assets/images/diamond.png" 
+                     width = "50"/>
+              </buttom>
+              <button class="btn btn-default gem" value=2>
+                <img src="assets/images/ruby.png" 
+                     width = "50"/>
+              </button>
+              <button class="btn btn-default gem" value=3>
+                <img src="assets/images/topaz.png" 
+                     width = "50" />
+              </button> 
+          </div>
+        </div>
+      <div class = "panel panel-default">
+        <div class = "panel-body">
+        <table>
+          <tr>
+            <th><h3>Your total score : </h3></th>
+            <td id="totalScore"><h3>0</h3></td>
+          </tr>
+        </table>
+        </div>
+      </div>        
+      <div class="col-sm-2"></div> 
+    </div>
+  </div>
+
+  </body>
+</html>
